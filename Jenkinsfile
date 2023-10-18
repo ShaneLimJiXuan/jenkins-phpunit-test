@@ -16,4 +16,9 @@ pipeline {
             }
 		}
 	}
+	Post{
+		always{
+			junit testReults: 'logs/unitreport.xml'
+		}
+	}
 }
